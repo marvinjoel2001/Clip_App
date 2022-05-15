@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_anadir"
+    app:startDestination="@id/eleccionAnadirFragment">
+
+    <fragment
+        android:id="@+id/eleccionAnadirFragment"
+        android:name="com.example.clip_app.EleccionAnadirFragment"
+        android:label="fragment_eleccion_anadir"
+        tools:layout="@layout/fragment_eleccion_anadir" >
+        <action
+            android:id="@+id/action_eleccionAnadirFragment_to_inputCodigoFragment2"
+            app:destination="@id/inputCodigoFragment2" />
+        <action
+            android:id="@+id/action_eleccionAnadirFragment_to_newRecorder_Fragment2"
+            app:destination="@id/newRecorder_Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/inputCodigoFragment2"
+        android:name="com.example.clip_app.InputCodigoFragment"
+        android:label="fragment_input_codigo"
+        tools:layout="@layout/fragment_input_codigo" >
+        <action
+            android:id="@+id/action_inputCodigoFragment2_to_opcionAlarmFragment4"
+            app:destination="@id/opcionAlarmFragment4" />
+    </fragment>
+    <fragment
+        android:id="@+id/newRecorder_Fragment2"
+        android:name="com.example.clip_app.NewRecorder_Fragment"
+        android:label="fragment_new_recorder_"
+        tools:layout="@layout/fragment_new_recorder_" >
+        <action
+            android:id="@+id/action_newRecorder_Fragment2_to_opcionAlarmFragment4"
+            app:destination="@id/opcionAlarmFragment4" />
+    </fragment>
+    <fragment
+        android:id="@+id/opcionAlarmFragment4"
+        android:name="com.example.clip_app.OpcionAlarmFragment"
+        android:label="fragment_opcion_alarm"
+        tools:layout="@layout/fragment_opcion_alarm" >
+        <action
+            android:id="@+id/action_opcionAlarmFragment4_to_electionAlarmFragment4"
+            app:destination="@id/electionAlarmFragment4" />
+    </fragment>
+    <fragment
+        android:id="@+id/electionAlarmFragment4"
+        android:name="com.example.clip_app.ElectionAlarmFragment"
+        android:label="fragment_election_alarm"
+        tools:layout="@layout/fragment_election_alarm" />
+</navigation>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "849638156271",
+    "firebase_url": "https://cliprecordatorios.firebaseio.com",
+    "project_id": "cliprecordatorios",
+    "storage_bucket": "cliprecordatorios.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849638156271:android:93f3421282029fff9a381a",
+        "android_client_info": {
+          "package_name": "com.example.clip_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "849638156271-cn5icjcjrmpo7vo07lnbrjv55quvbsp8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOaJsQ3P6535dp_clQI0_eSbRH71Xguf8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "849638156271-cn5icjcjrmpo7vo07lnbrjv55quvbsp8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

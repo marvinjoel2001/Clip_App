@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_share"
+    tools:ignore="UnusedNavigation"
+    app:startDestination="@id/inputCodigoFragment">
+
+    <fragment
+        android:id="@+id/inputCodigoFragment"
+        android:name="com.example.clip_app.InputCodigoFragment"
+        android:label="fragment_input_codigo"
+        tools:layout="@layout/fragment_input_codigo" >
+        <action
+            android:id="@+id/action_inputCodigoFragment_to_opcionAlarmFragment2"
+            app:destination="@id/opcionAlarmFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/opcionAlarmFragment2"
+        android:name="com.example.clip_app.OpcionAlarmFragment"
+        android:label="fragment_opcion_alarm"
+        tools:layout="@layout/fragment_opcion_alarm" >
+        <action
+            android:id="@+id/action_opcionAlarmFragment2_to_electionAlarmFragment"
+            app:destination="@id/electionAlarmFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/electionAlarmFragment"
+        android:name="com.example.clip_app.ElectionAlarmFragment"
+        android:label="fragment_election_alarm"
+        tools:layout="@layout/fragment_election_alarm" />
+</navigation>

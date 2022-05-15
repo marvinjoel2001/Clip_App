@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CodigoFragment"
+    android:background="@mipmap/reloj_foreground">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d0000000"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/ic_share_accent"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="monospace"
+            android:text="CODIGO GENERADO"
+            android:textColor="#ccc"
+            android:textSize="25dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        <EditText
+            android:id="@+id/et_codigoNew"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:hint="Ej...ABS67C"
+            android:text="si copia"
+            android:textAlignment="center"
+            android:textColor="@color/blanco"
+            android:textColorHint="#ccc"
+            android:background="@drawable/txtredondeado"
+            android:textSize="20dp"
+            android:editable="false"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_copiar"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="COPIAR"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/primary_text"
+            app:backgroundTint="@color/accent"
+            app:cornerRadius="27dp"
+            android:elevation="2dp"
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

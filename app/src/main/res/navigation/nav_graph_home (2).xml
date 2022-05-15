@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_home">
+    <fragment
+        android:id="@+id/opcionAlarmFragment"
+        android:name="com.example.clip_app.OpcionAlarmFragment"
+        android:label="fragment_opcion_alarm"
+        tools:layout="@layout/fragment_opcion_alarm" >
+        <action
+            android:id="@+id/action_opcionAlarmFragment_to_electionAlarmFragment2"
+            app:destination="@id/electionAlarmFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/electionAlarmFragment2"
+        android:name="com.example.clip_app.ElectionAlarmFragment"
+        android:label="fragment_election_alarm"
+        tools:layout="@layout/fragment_election_alarm" />
+    <fragment
+        android:id="@+id/newRecorder_Fragment"
+        android:name="com.example.clip_app.NewRecorder_Fragment"
+        android:label="fragment_new_recorder_"
+        tools:layout="@layout/fragment_new_recorder_" >
+        <action
+            android:id="@+id/action_newRecorder_Fragment_to_opcionAlarmFragment"
+            app:destination="@id/opcionAlarmFragment" />
+    </fragment>
+</navigation>

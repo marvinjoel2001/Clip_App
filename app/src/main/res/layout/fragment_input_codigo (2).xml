@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".InputCodigoFragment"
+    android:background="@mipmap/primary_foreground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d0000000"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/ic_share_accent"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="monospace"
+            android:text="INGRESA EL CODIGO"
+            android:textColor="#ccc"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/et_codigo"
+            android:layout_width="374dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/txtredondeado"
+            android:hint="Ej...ABS67C"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="15dp"
+            android:textColorHint="#ccc"/>
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="COMPROBAR"
+            android:textColor="@color/primary_text"
+            app:backgroundTint="@color/accent"
+            app:cornerRadius="16dp"
+            android:elevation="2dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

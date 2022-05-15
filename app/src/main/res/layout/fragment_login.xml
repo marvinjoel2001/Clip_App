@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/primary_foreground"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LoginFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d0000000"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="50dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="monospace"
+            android:text="INGRESA TU NOMBRE"
+            android:textColor="#ccc"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/et_nombre"
+            android:layout_width="374dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/txtredondeado"
+            android:hint="Ej...Alex"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="15dp"
+            android:textColorHint="#ccc"
+            android:textColor="@color/blanco"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_siguiente"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:elevation="2dp"
+            android:text="Siguiente"
+            android:textColor="@color/primary_text"
+            app:backgroundTint="@color/accent"
+
+
+            app:cornerRadius="16dp" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

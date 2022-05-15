@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/relojes_foreground"
+    tools:context=".ElectionAlarmFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#d000">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="55dp"
+            android:fontFamily="monospace"
+            android:text="NUEVA ALARMA"
+            android:gravity="center"
+            android:textColor="@color/blanco"
+            android:textSize="25dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="monospace"
+            android:text="FECHA"
+            android:textColor="@color/accent"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/et_newFecha"
+            android:layout_width="260dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/txtredondeado"
+            android:layout_gravity="left"
+            android:hint="Introducir Fecha"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#fff"
+            android:textColorHint="#ccc" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="monospace"
+            android:text="HORA"
+            android:textColor="@color/accent"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/et_newHora"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/txtredondeado"
+            android:hint="Introducir Hora"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="15dp"
+            android:textColor="#fff"
+            android:textColorHint="#ccc" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_añadir"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:text="AÑADIR"
+            android:textColor="@color/primary_text"
+            app:backgroundTint="@color/primary_dark"
+            app:cornerRadius="16dp"
+            android:elevation="2dp"
+            android:layout_gravity="center"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_salir"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="salir"
+            android:visibility="invisible"
+            android:textColor="@color/primary_text"
+            app:backgroundTint="@color/accent"
+            app:cornerRadius="16dp"
+            android:elevation="2dp"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/tv_alarmAñadidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alarmas añadidas   "
+            android:layout_marginTop="10dp"
+            android:textColor="@color/secondary_text"/>
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RecordatorioFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@color/accent">
+
+            <LinearLayout
+                android:layout_width="79dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_regresar"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Recordatorio"
+                android:textSize="25dp"
+                android:gravity="center" />
+            <LinearLayout
+                android:id="@+id/btn_borrar"
+                android:layout_width="49dp"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:layout_marginLeft="35dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_borrar"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btn_compartir"
+                android:layout_width="49dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp" >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_share"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre: "
+                android:textSize="30dp"
+                android:fontFamily="sans-serif-black"/>
+            <TextView
+                android:id="@+id/tv_Mnombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TAREA "
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha: "
+                android:textSize="30dp"
+                android:fontFamily="sans-serif-black"/>
+            <TextView
+                android:id="@+id/tv_Mfecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2000-12-25"
+                android:textSize="30dp"
+                android:textColor="@color/accent"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hora: "
+                android:textSize="30dp"
+                android:fontFamily="sans-serif-black"/>
+            <TextView
+                android:id="@+id/tv_Mhora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20:35"
+                android:textSize="30dp"
+                android:textColor="@color/accent"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descripcion: "
+                android:textSize="30dp"
+                android:fontFamily="sans-serif-black"/>
+
+
+        </LinearLayout>
+        <TextView
+        android:id="@+id/tv_Mdescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="ERA UN tarea para presentar el lunes en la clase"
+        android:textSize="30dp"
+        />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_editar_floating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_lapiz"
+                app:backgroundTint="@color/accent" />
+    </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

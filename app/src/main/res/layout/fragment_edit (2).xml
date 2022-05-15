@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/primary_foreground"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".EditFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d000"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="monospace"
+            android:text="NOMBRE DE TU RECUERDO"
+            android:textColor="@color/accent"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/et_editNombre"
+            android:layout_width="374dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/txtredondeado"
+            android:hint="Ingrese un nombre"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="15dp"
+            android:textColor="#fff"
+            android:textColorHint="#ccc" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="monospace"
+            android:text="CATEGORIA"
+            android:textColor="@color/accent"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/et_editCategoria"
+            android:layout_width="290dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/txtredondeado"
+            android:hint="Introducir Categoria"
+            android:focusable="false"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#fff"
+            android:textColorHint="#ccc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="monospace"
+                    android:text="FECHA"
+                    android:textColor="@color/accent"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/et_editFecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/btn_redondeados"
+                    android:hint="Introducir Fecha"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#fff"
+                    android:textColorHint="#ccc"
+                    android:focusable="false"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="monospace"
+                    android:text="HORA"
+                    android:textColor="@color/accent"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/et_editHora"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/btn_redondeados"
+                    android:hint="Introducir Hora"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="15dp"
+                    android:textColor="#fff"
+                    android:textColorHint="#ccc"
+                    android:focusable="false"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="monospace"
+            android:text="DESCRIPCION"
+            android:textColor="@color/accent"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/et_editDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/txtredondeado"
+            android:hint="Introduce una pequeña descripcion..."
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="15dp"
+            android:textColor="#fff"
+            android:textColorHint="#ccc" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_guardar_edit"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:elevation="2dp"
+            android:text="Guardar"
+            android:textColor="@color/primary_text"
+            app:backgroundTint="@color/accent"
+            app:cornerRadius="16dp" />
+    </LinearLayout>
+
+</FrameLayout>

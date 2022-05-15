@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_edit"
+    app:startDestination="@id/recordatorioFragment">
+
+    <fragment
+        android:id="@+id/recordatorioFragment"
+        android:name="com.example.clip_app.RecordatorioFragment"
+        android:label="fragment_recordatorio"
+        tools:layout="@layout/fragment_recordatorio" >
+        <action
+            android:id="@+id/action_recordatorioFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.example.clip_app.EditFragment"
+        android:label="fragment_edit"
+        tools:layout="@layout/fragment_edit" >
+        <action
+            android:id="@+id/action_editFragment_to_opcionAlarmFragment3"
+            app:destination="@id/opcionAlarmFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/opcionAlarmFragment3"
+        android:name="com.example.clip_app.OpcionAlarmFragment"
+        android:label="fragment_opcion_alarm"
+        tools:layout="@layout/fragment_opcion_alarm" >
+        <action
+            android:id="@+id/action_opcionAlarmFragment3_to_electionAlarmFragment3"
+            app:destination="@id/electionAlarmFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/electionAlarmFragment3"
+        android:name="com.example.clip_app.ElectionAlarmFragment"
+        android:label="fragment_election_alarm"
+        tools:layout="@layout/fragment_election_alarm" />
+</navigation>
